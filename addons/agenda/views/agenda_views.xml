@@ -1,0 +1,74 @@
+<odoo>
+  <data>
+
+        <!-- Boton principal de la app -->
+        <menuitem
+            id="agenda.menu_root"
+            name="Agenda"/>
+
+        <!-- Botones principales dentro de la app  -->
+        <menuitem
+            id="agenda.menu_publicaciones"
+            name="Publicaciones"
+            parent="agenda.menu_root"/>
+
+            <menuitem
+                id="agenda.menu_publicaciones_1"
+                name="Publicaciones"
+                parent="agenda.menu_publicaciones"
+                action="agenda.publicacion_action_window"/>
+
+            <menuitem
+                id="agenda.menu_tipopublicaciones"
+                name="Tipos de publicaciones"
+                parent="agenda.menu_publicaciones"
+                action="agenda.tipopublicacion_action_window"/>
+
+        <menuitem
+            id="agenda.menu_personal"
+            name="Personal"
+            parent="agenda.menu_root"/>
+
+            <!-- SubBotones  -->
+            <menuitem
+                id="agenda.menu_profesores"
+                name="Profesores"
+                parent="agenda.menu_personal"
+                action="agenda.profesor_action_window"/>
+
+            <menuitem
+                id="agenda.menu_administrativos"
+                name="Administrativos"
+                parent="agenda.menu_personal"
+                action="agenda.administrativo_action_window"/>
+
+        <menuitem
+            id="agenda.menu_alumnado"
+            name="Alumnado"
+            parent="agenda.menu_root"/>
+
+            <menuitem
+                id="agenda.menu_alumnos"
+                name="Alumnos"
+                parent="agenda.menu_alumnado"
+                action="agenda.alumno_action_window"/>
+
+            <menuitem
+                id="agenda.menu_tutores"
+                name="Tutores"
+                parent="agenda.menu_alumnado"
+                action="agenda.tutor_action_window"/>
+
+        <menuitem
+            id="agenda.menu_cursos"
+            name="Cursos"
+            action="agenda.curso_action_window"
+            parent="agenda.menu_root"/>
+        
+        <menuitem
+            id="agenda.menu_materias"
+            name="Materias"
+            action="agenda.materia_action_window"
+            parent="agenda.menu_root"/>
+  </data>
+</odoo>

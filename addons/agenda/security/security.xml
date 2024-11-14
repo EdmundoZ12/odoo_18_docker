@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+
+        <!-- Categoría del módulo agenda -->
+        <record id="agenda.module_category_agenda" model="ir.module.category">
+            <field name="name">Agenda</field>
+            <field name="description">Ayuda a Gestionar tu agenda</field>
+            <field name="sequence">100</field>
+        </record>
+
+        <!-- Grupo: Profesor -->
+        <record id="group_agenda_profesor" model="res.groups">
+            <field name="name">Profesor</field>
+            <field name="category_id" ref="agenda.module_category_agenda"/>
+            <field name="comment">Usuarios que gestionan y supervisan actividades académicas</field>
+        </record>
+
+        <!-- Grupo: Tutor -->
+        <record id="group_agenda_tutor" model="res.groups">
+            <field name="name">Tutor</field>
+            <field name="category_id" ref="agenda.module_category_agenda"/>
+            <field name="comment">Usuarios que asisten en la gestión de estudiantes</field>
+            <field name="implied_ids" eval="[(4, ref('agenda.group_agenda_profesor'))]"/>
+            <!-- Todos los tutores también pertenecen al grupo Profesor -->
+        </record>
+
+        <!-- Grupo: Estudiante -->
+        <record id="group_agenda_alumno" model="res.groups">
+            <field name="name">Alumno</field>
+            <field name="category_id" ref="agenda.module_category_agenda"/>
+            <field name="comment">Usuarios con acceso limitado para consultar su agenda académica</field>
+        </record>
+
+        <!-- Grupo: Administrador -->
+        <record id="group_agenda_administrativo" model="res.groups">
+            <field name="name">Administrativo</field>
+            <field name="category_id" ref="agenda.module_category_agenda"/>
+            <field name="comment">Usuarios con acceso total para gestionar toda la agenda</field>
+            <field name="implied_ids" eval="[(4, ref('agenda.group_agenda_profesor')), (4, ref('agenda.group_agenda_tutor')), (4, ref('agenda.group_agenda_alumno'))]"/>
+            <!-- Los administradores tienen permisos de Profesor, Tutor y Estudiante -->
+            <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+            <!-- Añadimos a los usuarios administradores de Odoo al grupo Administrador -->
+        </record>
+
+    </data>
+</odoo>

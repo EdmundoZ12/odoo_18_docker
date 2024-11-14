@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+
+    <!-- Vista de lista para curso -->
+    <record model="ir.ui.view" id="agenda_curso_list_view">
+      <field name="name">agenda.curso.list</field>
+      <field name="model">agenda.curso</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="grado"/>
+          <field name="seccion"/>
+        </list>
+      </field>
+    </record>
+
+    <!-- Vista de formulario para curso -->
+    <record model="ir.ui.view" id="agenda_curso_form_view">
+      <field name="name">agenda.curso.form</field>
+      <field name="model">agenda.curso</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="grado"/>
+            <field name="seccion"/>
+          </group>
+          <notebook>
+            <page string="Alumnos">
+              <field name="alumno_ids">
+                <list>
+                  <field name="alumno_id"/>
+                  <field name="gestion"/>
+                </list>
+              </field>
+            </page>
+
+            <page string="Profesores">
+              <field name="profesor_ids">
+                <list>
+                  <field name="profesor_id"/>
+                  <field name="materia_id"/>
+                </list>
+              </field>
+            </page>
+          </notebook>
+        </form>
+      </field>
+    </record>
+
+    <!-- Declaracion de las vista de curso, en este caso lista y formulario -->
+
+    <record model="ir.actions.act_window" id="agenda.curso_action_window">
+      <field name="name">Cursos</field>
+      <field name="res_model">agenda.curso</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+  </data>
+</odoo>

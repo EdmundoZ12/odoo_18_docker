@@ -1,0 +1,100 @@
+<odoo>
+  <data>
+    <!-- Vista de formulario para Publicación -->
+    <record id="agenda_publicacion_form_view" model="ir.ui.view">
+      <field name="name">agenda.publicacion.form</field>
+      <field name="model">agenda.publicacion</field>
+      <field name="arch" type="xml">
+        <form string="Publicación">
+          <group>
+            <field name="name"/>
+            <field name="contenido"/>
+            <field name="tipo_publicacion"/>
+            <field name="archivo_ids" widget="many2many_binary"/>
+            <field name="usuario_creador_id" readonly="1"/>
+            <!-- Mostrar el tipo de usuario relacionado -->
+            <field name="tipo_usuario_creador" readonly="1" string="Tipo de Usuario"/>
+          </group>
+
+          <notebook>
+            <page string="Visible a los alumnos">
+              <field name="visible_alumnos"/>
+            </page>
+
+            <page string="Visible a Tutores">
+              <field name="visible_tutores"/>
+            </page>
+
+            <page string="Visible a profesores">
+              <field name="visible_profesores"/>
+            </page>
+
+            <page string="Visible a Administrativos">
+              <field name="visible_administrativos"/>
+            </page>
+          </notebook>
+
+          <notebook>
+            <page string="Comentarios">
+              <field name="comentario_ids">
+                <list>
+                  <field name="contenido"/>
+                  <field name="fecha_hora"/>
+                  <field name="usuario_creador_id"/>
+                  <field name="tipo_usuario_creador"/>
+                </list>
+              </field>
+            </page>
+          </notebook>
+        </form>
+      </field>
+    </record>
+
+    <!-- Vista de lista para Publicación -->
+    <record id="agenda_publicacion_list_view" model="ir.ui.view">
+      <field name="name">agenda.publicacion.list</field>
+      <field name="model">agenda.publicacion</field>
+      <field name="arch" type="xml">
+        <list string="Publicaciones">
+          <field name="name"/>
+          <field name="fecha"/>
+          <field name="tipo_publicacion"/>
+          <field name="usuario_creador_id"/>
+          <!-- Mostrar el tipo de usuario en la vista de lista -->
+          <field name="tipo_usuario_creador" string="Tipo de Usuario"/>
+        </list>
+      </field>
+    </record>
+
+
+    <!-- Vista Kanban para Publicación -->
+    <record id="agenda_publicacion_kanban_view" model="ir.ui.view">
+      <field name="name">Publicacion Kanban</field>
+      <field name="model">agenda.publicacion</field>
+      <field name="arch" type="xml">
+        <kanban string="Publicaciones" class="container">
+          <templates>
+            <t t-name="kanban-box">
+              <div t-attf-class="oe_kanban_global_click row justify-content-center mb-4">
+                <div class="card col-12">
+                  <div class="card-body">
+                    <h5 class="card-title"><field name="name"/></h5>
+                    <h6 class="card-subtitle mb-2 text-muted"><field name="tipo_publicacion"/></h6>
+                    <p class="card-text"><field name="contenido"/></p>
+                  </div>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <!-- Acción para abrir las publicaciones -->
+    <record model="ir.actions.act_window" id="agenda.publicacion_action_window">
+      <field name="name">Publicaciones</field>
+      <field name="res_model">agenda.publicacion</field>
+      <field name="view_mode">kanban,list,form</field>
+    </record>
+  </data>
+</odoo>

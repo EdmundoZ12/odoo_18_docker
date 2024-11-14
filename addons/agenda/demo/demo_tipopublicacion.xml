@@ -1,0 +1,23 @@
+<odoo>
+    <data noupdate="1">
+      <!-- tipopublicacions  -->
+                  
+        <record id="agenda_tipopublicacion_0" model="agenda.tipopublicacion">
+            <field name="name">Comunicado</field>
+        </record>
+
+        <record id="agenda_tipopublicacion_1" model="agenda.tipopublicacion">
+            <field name="name">Anuncio</field>
+        </record>
+
+        <record id="agenda_tipopublicacion_2" model="agenda.tipopublicacion">
+            <field name="name">Tarea</field>
+        </record>
+        
+        <record id="agenda_tipopublicacion_3" model="agenda.tipopublicacion">
+            <field name="name">Actividad</field>
+        </record>
+
+        
+    </data>
+</odoo> 

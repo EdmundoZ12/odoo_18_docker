@@ -1,0 +1,151 @@
+<odoo>
+    <data noupdate="1">
+      <!-- Cursos  -->
+        <!-- Cursos Primaria -->
+        <record id="agenda_curso_0" model="agenda.curso">
+            <field name="name">1ero</field>
+            <field name="seccion">a</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_1" model="agenda.curso">
+            <field name="name">1ero</field>
+            <field name="seccion">b</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_2" model="agenda.curso">
+            <field name="name">2do</field>
+            <field name="seccion">a</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_3" model="agenda.curso">
+            <field name="name">2do</field>
+            <field name="seccion">b</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_4" model="agenda.curso">
+            <field name="name">3ero</field>
+            <field name="seccion">a</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_5" model="agenda.curso">
+            <field name="name">3ero</field>
+            <field name="seccion">b</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_6" model="agenda.curso">
+            <field name="name">4to</field>
+            <field name="seccion">a</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_7" model="agenda.curso">
+            <field name="name">4to</field>
+            <field name="seccion">b</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_8" model="agenda.curso">
+            <field name="name">5to</field>
+            <field name="seccion">a</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_9" model="agenda.curso">
+            <field name="name">5to</field>
+            <field name="seccion">b</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_10" model="agenda.curso">
+            <field name="name">6to</field>
+            <field name="seccion">a</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <record id="agenda_curso_11" model="agenda.curso">
+            <field name="name">6to</field>
+            <field name="seccion">b</field>
+            <field name="grado">primaria</field>
+        </record>
+
+        <!-- Cursos Secundaria -->
+        <record id="agenda_curso_12" model="agenda.curso">
+            <field name="name">1ero</field>
+            <field name="seccion">a</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_13" model="agenda.curso">
+            <field name="name">1ero</field>
+            <field name="seccion">b</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_14" model="agenda.curso">
+            <field name="name">2do</field>
+            <field name="seccion">a</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_15" model="agenda.curso">
+            <field name="name">2do</field>
+            <field name="seccion">b</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_16" model="agenda.curso">
+            <field name="name">3ero</field>
+            <field name="seccion">a</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_17" model="agenda.curso">
+            <field name="name">3ero</field>
+            <field name="seccion">b</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_18" model="agenda.curso">
+            <field name="name">4to</field>
+            <field name="seccion">a</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_19" model="agenda.curso">
+            <field name="name">4to</field>
+            <field name="seccion">b</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_20" model="agenda.curso">
+            <field name="name">5to</field>
+            <field name="seccion">a</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_21" model="agenda.curso">
+            <field name="name">5to</field>
+            <field name="seccion">b</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_22" model="agenda.curso">
+            <field name="name">6to</field>
+            <field name="seccion">a</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+        <record id="agenda_curso_23" model="agenda.curso">
+            <field name="name">6to</field>
+            <field name="seccion">b</field>
+            <field name="grado">secundaria</field>
+        </record>
+
+    </data>
+</odoo> 

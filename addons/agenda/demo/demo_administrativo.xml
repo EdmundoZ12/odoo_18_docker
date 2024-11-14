@@ -1,0 +1,207 @@
+<odoo>
+    <data noupdate="1">
+      <!-- Administrativos  -->
+      <!-- 0 -->
+      <record model="res.partner" id="partner_administrativo_0">
+          <field name="name">Joel Willis</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="email">joel.willis63@example.com</field>
+          <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+      </record>
+
+      <record id="user_administrativo_0" model="res.users">
+          <field name="login">joel.willis63@example.com</field> <!-- Directamente usa el correo -->
+          <field name="password">123</field>
+          <field name="partner_id" ref="partner_administrativo_0"/>
+          <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_administrativo')])]"/>
+      </record>
+
+      <record id="employee_administrativo_0" model="hr.employee">
+          <field name="name"> Joel Willis </field>
+          <field name="user_id" ref="user_administrativo_0"/>
+          <field name="category_ids" eval="[(6, 0, [ref('employee_category_administrativo')])]"/>
+      </record>
+
+      <record id="agenda_administrativo_0" model="agenda.administrativo">
+          <field name="name">Joel Willis</field>
+          <field name="cargo">Secretario</field>
+          <field name="fecha_inicio">2021-01-01</field>
+          <field name="user_id" ref="user_administrativo_0"/>
+          <field name="employee_id" ref="employee_administrativo_0"/>
+      </record>
+            <!-- 1 -->
+      <record model="res.partner" id="partner_administrativo_1">
+          <field name="name">Maria Alvarez</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="email">maria.alvarez@example.com</field>
+          <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+      </record>
+
+      <record id="user_administrativo_1" model="res.users">
+          <field name="login">maria.alvarez@example.com</field>
+          <field name="password">123</field>
+          <field name="partner_id" ref="partner_administrativo_1"/>
+          <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_administrativo')])]"/>
+      </record>
+
+      <record id="employee_administrativo_1" model="hr.employee">
+          <field name="name">Maria Alvarez</field>
+          <field name="user_id" ref="user_administrativo_1"/>
+          <field name="category_ids" eval="[(6, 0, [ref('employee_category_administrativo')])]"/>
+      </record>
+
+      <record id="agenda_administrativo_1" model="agenda.administrativo">
+          <field name="name">Maria Alvarez</field>
+          <field name="cargo">Directora Administrativa</field>
+          <field name="fecha_inicio">2019-02-15</field>
+          <field name="user_id" ref="user_administrativo_1"/>
+          <field name="employee_id" ref="employee_administrativo_1"/>
+      </record>
+
+      <!-- 2 -->
+      <record model="res.partner" id="partner_administrativo_2">
+          <field name="name">Carlos Ramirez</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="email">carlos.ramirez@example.com</field>
+          <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+      </record>
+
+      <record id="user_administrativo_2" model="res.users">
+          <field name="login">carlos.ramirez@example.com</field>
+          <field name="password">123</field>
+          <field name="partner_id" ref="partner_administrativo_2"/>
+          <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_administrativo')])]"/>
+      </record>
+
+      <record id="employee_administrativo_2" model="hr.employee">
+          <field name="name">Carlos Ramirez</field>
+          <field name="user_id" ref="user_administrativo_2"/>
+          <field name="category_ids" eval="[(6, 0, [ref('employee_category_administrativo')])]"/>
+      </record>
+
+      <record id="agenda_administrativo_2" model="agenda.administrativo">
+          <field name="name">Carlos Ramirez</field>
+          <field name="cargo">Coordinador Administrativo</field>
+          <field name="fecha_inicio">2020-05-10</field>
+          <field name="user_id" ref="user_administrativo_2"/>
+          <field name="employee_id" ref="employee_administrativo_2"/>
+      </record>
+
+      <!-- 3 -->
+      <record model="res.partner" id="partner_administrativo_3">
+          <field name="name">Laura Gonzalez</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="email">laura.gonzalez@example.com</field>
+          <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+      </record>
+
+      <record id="user_administrativo_3" model="res.users">
+          <field name="login">laura.gonzalez@example.com</field>
+          <field name="password">123</field>
+          <field name="partner_id" ref="partner_administrativo_3"/>
+          <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_administrativo')])]"/>
+      </record>
+
+      <record id="employee_administrativo_3" model="hr.employee">
+          <field name="name">Laura Gonzalez</field>
+          <field name="user_id" ref="user_administrativo_3"/>
+          <field name="category_ids" eval="[(6, 0, [ref('employee_category_administrativo')])]"/>
+      </record>
+
+      <record id="agenda_administrativo_3" model="agenda.administrativo">
+          <field name="name">Laura Gonzalez</field>
+          <field name="cargo">Asistente Administrativa</field>
+          <field name="fecha_inicio">2022-08-05</field>
+          <field name="user_id" ref="user_administrativo_3"/>
+          <field name="employee_id" ref="employee_administrativo_3"/>
+      </record>
+
+      <!-- 4 -->
+      <record model="res.partner" id="partner_administrativo_4">
+          <field name="name">Juan Perez</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="email">juan.perez@example.com</field>
+          <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+      </record>
+
+      <record id="user_administrativo_4" model="res.users">
+          <field name="login">juan.perez@example.com</field>
+          <field name="password">123</field>
+          <field name="partner_id" ref="partner_administrativo_4"/>
+          <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_administrativo')])]"/>
+      </record>
+
+      <record id="employee_administrativo_4" model="hr.employee">
+          <field name="name">Juan Perez</field>
+          <field name="user_id" ref="user_administrativo_4"/>
+          <field name="category_ids" eval="[(6, 0, [ref('employee_category_administrativo')])]"/>
+      </record>
+
+      <record id="agenda_administrativo_4" model="agenda.administrativo">
+          <field name="name">Juan Perez</field>
+          <field name="cargo">Director Financiero</field>
+          <field name="fecha_inicio">2018-06-01</field>
+          <field name="user_id" ref="user_administrativo_4"/>
+          <field name="employee_id" ref="employee_administrativo_4"/>
+      </record>
+
+      <!-- 5 -->
+      <record model="res.partner" id="partner_administrativo_5">
+          <field name="name">Sofia Martinez</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="email">sofia.martinez@example.com</field>
+          <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+      </record>
+
+      <record id="user_administrativo_5" model="res.users">
+          <field name="login">sofia.martinez@example.com</field>
+          <field name="password">123</field>
+          <field name="partner_id" ref="partner_administrativo_5"/>
+          <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_administrativo')])]"/>
+      </record>
+
+      <record id="employee_administrativo_5" model="hr.employee">
+          <field name="name">Sofia Martinez</field>
+          <field name="user_id" ref="user_administrativo_5"/>
+          <field name="category_ids" eval="[(6, 0, [ref('employee_category_administrativo')])]"/>
+      </record>
+
+      <record id="agenda_administrativo_5" model="agenda.administrativo">
+          <field name="name">Sofia Martinez</field>
+          <field name="cargo">Asesora Administrativa</field>
+          <field name="fecha_inicio">2023-03-01</field>
+          <field name="user_id" ref="user_administrativo_5"/>
+          <field name="employee_id" ref="employee_administrativo_5"/>
+      </record>
+
+      <!-- 6 -->
+      <record model="res.partner" id="partner_administrativo_6">
+          <field name="name">Fernando Soto</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="email">fernando.soto@example.com</field>
+          <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+      </record>
+
+      <record id="user_administrativo_6" model="res.users">
+          <field name="login">fernando.soto@example.com</field>
+          <field name="password">123</field>
+          <field name="partner_id" ref="partner_administrativo_6"/>
+          <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_administrativo')])]"/>
+      </record>
+
+      <record id="employee_administrativo_6" model="hr.employee">
+          <field name="name">Fernando Soto</field>
+          <field name="user_id" ref="user_administrativo_6"/>
+          <field name="category_ids" eval="[(6, 0, [ref('employee_category_administrativo')])]"/>
+      </record>
+
+      <record id="agenda_administrativo_6" model="agenda.administrativo">
+          <field name="name">Fernando Soto</field>
+          <field name="cargo">Jefe de Recursos Humanos</field>
+          <field name="fecha_inicio">2017-07-25</field>
+          <field name="user_id" ref="user_administrativo_6"/>
+          <field name="employee_id" ref="employee_administrativo_6"/>
+      </record>
+
+    </data>
+</odoo> 

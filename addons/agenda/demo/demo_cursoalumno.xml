@@ -1,0 +1,245 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="agenda_cursoalumno_1" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_1"/>
+            <field name="alumno_id" ref="agenda_alumno_0"/>
+            <field name="gestion">2024-01-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_2" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_2"/>
+            <field name="alumno_id" ref="agenda_alumno_1"/>
+            <field name="gestion">2024-01-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_3" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_3"/>
+            <field name="alumno_id" ref="agenda_alumno_2"/>
+            <field name="gestion">2024-01-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_4" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_4"/>
+            <field name="alumno_id" ref="agenda_alumno_3"/>
+            <field name="gestion">2024-01-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_5" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_5"/>
+            <field name="alumno_id" ref="agenda_alumno_4"/>
+            <field name="gestion">2024-01-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_6" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_6"/>
+            <field name="alumno_id" ref="agenda_alumno_5"/>
+            <field name="gestion">2024-01-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_7" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_7"/>
+            <field name="alumno_id" ref="agenda_alumno_6"/>
+            <field name="gestion">2024-01-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_8" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_8"/>
+            <field name="alumno_id" ref="agenda_alumno_7"/>
+            <field name="gestion">2024-01-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_9" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_9"/>
+            <field name="alumno_id" ref="agenda_alumno_8"/>
+            <field name="gestion">2024-01-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_10" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_10"/>
+            <field name="alumno_id" ref="agenda_alumno_9"/>
+            <field name="gestion">2024-01-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_11" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_11"/>
+            <field name="alumno_id" ref="agenda_alumno_10"/>
+            <field name="gestion">2024-01-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_12" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_12"/>
+            <field name="alumno_id" ref="agenda_alumno_11"/>
+            <field name="gestion">2024-01-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_13" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_1"/>
+            <field name="alumno_id" ref="agenda_alumno_12"/>
+            <field name="gestion">2024-01-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_14" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_2"/>
+            <field name="alumno_id" ref="agenda_alumno_13"/>
+            <field name="gestion">2024-01-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_15" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_3"/>
+            <field name="alumno_id" ref="agenda_alumno_14"/>
+            <field name="gestion">2024-01-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_16" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_4"/>
+            <field name="alumno_id" ref="agenda_alumno_15"/>
+            <field name="gestion">2024-01-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_17" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_5"/>
+            <field name="alumno_id" ref="agenda_alumno_16"/>
+            <field name="gestion">2024-01-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_18" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_6"/>
+            <field name="alumno_id" ref="agenda_alumno_17"/>
+            <field name="gestion">2024-01-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_19" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_7"/>
+            <field name="alumno_id" ref="agenda_alumno_18"/>
+            <field name="gestion">2024-01-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_20" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_8"/>
+            <field name="alumno_id" ref="agenda_alumno_19"/>
+            <field name="gestion">2024-01-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_21" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_9"/>
+            <field name="alumno_id" ref="agenda_alumno_20"/>
+            <field name="gestion">2024-01-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_22" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_10"/>
+            <field name="alumno_id" ref="agenda_alumno_1"/>
+            <field name="gestion">2024-02-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_23" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_11"/>
+            <field name="alumno_id" ref="agenda_alumno_2"/>
+            <field name="gestion">2024-02-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_24" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_12"/>
+            <field name="alumno_id" ref="agenda_alumno_3"/>
+            <field name="gestion">2024-02-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_25" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_1"/>
+            <field name="alumno_id" ref="agenda_alumno_4"/>
+            <field name="gestion">2024-02-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_26" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_2"/>
+            <field name="alumno_id" ref="agenda_alumno_5"/>
+            <field name="gestion">2024-02-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_27" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_3"/>
+            <field name="alumno_id" ref="agenda_alumno_6"/>
+            <field name="gestion">2024-02-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_28" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_4"/>
+            <field name="alumno_id" ref="agenda_alumno_7"/>
+            <field name="gestion">2024-02-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_29" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_5"/>
+            <field name="alumno_id" ref="agenda_alumno_8"/>
+            <field name="gestion">2024-02-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_30" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_6"/>
+            <field name="alumno_id" ref="agenda_alumno_9"/>
+            <field name="gestion">2024-02-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_31" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_7"/>
+            <field name="alumno_id" ref="agenda_alumno_10"/>
+            <field name="gestion">2024-02-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_32" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_8"/>
+            <field name="alumno_id" ref="agenda_alumno_11"/>
+            <field name="gestion">2024-02-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_33" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_9"/>
+            <field name="alumno_id" ref="agenda_alumno_12"/>
+            <field name="gestion">2024-02-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_34" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_10"/>
+            <field name="alumno_id" ref="agenda_alumno_13"/>
+            <field name="gestion">2024-02-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_35" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_11"/>
+            <field name="alumno_id" ref="agenda_alumno_14"/>
+            <field name="gestion">2024-02-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_36" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_12"/>
+            <field name="alumno_id" ref="agenda_alumno_15"/>
+            <field name="gestion">2024-02-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_37" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_1"/>
+            <field name="alumno_id" ref="agenda_alumno_16"/>
+            <field name="gestion">2024-02-02</field>
+        </record>
+
+        <record id="agenda_cursoalumno_38" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_2"/>
+            <field name="alumno_id" ref="agenda_alumno_17"/>
+            <field name="gestion">2024-02-03</field>
+        </record>
+
+        <record id="agenda_cursoalumno_39" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_3"/>
+            <field name="alumno_id" ref="agenda_alumno_18"/>
+            <field name="gestion">2024-02-01</field>
+        </record>
+
+        <record id="agenda_cursoalumno_40" model="agenda.cursoalumno">
+            <field name="curso_id" ref="agenda_curso_4"/>
+            <field name="alumno_id" ref="agenda_alumno_19"/>
+            <field name="gestion">2024-02-02</field>
+        </record>
+
+    </data>
+</odoo> 

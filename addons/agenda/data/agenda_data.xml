@@ -1,0 +1,22 @@
+<odoo>
+    <data noupdate="1">
+        <record id="agenda_base_administrativo" model="agenda.administrativo">
+            <field name="name" eval="obj(ref('base.partner_admin')).name" model="res.partner"/>
+            <field name="cargo">Administrador</field>
+            <field name="fecha_inicio">2020-01-01</field>
+            <field name="user_id" ref="base.user_admin"></field>
+            <field name="employee_id" ref="hr.employee_admin"></field>
+        </record>
+                
+        <record id="employee_category_administrativo" model="hr.employee.category">
+            <field name="name">Administrativo</field>
+            <field name="color" eval="1"/>
+        </record>
+
+        <record id="employee_category_profesor" model="hr.employee.category">
+            <field name="name">Profesor</field>
+            <field name="color" eval="2"/>
+        </record>
+
+    </data>
+</odoo>

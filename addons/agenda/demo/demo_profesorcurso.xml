@@ -1,0 +1,317 @@
+<odoo>
+    <data noupdate="1">
+      
+        <!-- Curso 1ero A -->
+        <record id="agenda_profesorcurso_0" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_0"/>
+            <field name="profesor_id" ref="agenda_profesor_0"/>
+            <field name="materia_id" ref="agenda_materia_0"/>
+        </record>
+
+        <record id="agenda_profesorcurso_1" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_0"/>
+            <field name="profesor_id" ref="agenda_profesor_1"/>
+            <field name="materia_id" ref="agenda_materia_1"/>
+        </record>
+
+        <!-- Curso 1ero B -->
+        <record id="agenda_profesorcurso_2" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_1"/>
+            <field name="profesor_id" ref="agenda_profesor_2"/>
+            <field name="materia_id" ref="agenda_materia_0"/>
+        </record>
+
+        <record id="agenda_profesorcurso_3" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_1"/>
+            <field name="profesor_id" ref="agenda_profesor_3"/>
+            <field name="materia_id" ref="agenda_materia_1"/>
+        </record>
+
+        <!-- Curso 2do A -->
+        <record id="agenda_profesorcurso_4" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_2"/>
+            <field name="profesor_id" ref="agenda_profesor_4"/>
+            <field name="materia_id" ref="agenda_materia_2"/>
+        </record>
+
+        <record id="agenda_profesorcurso_5" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_2"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_3"/>
+        </record>
+
+        <!-- Curso 2do B -->
+        <record id="agenda_profesorcurso_6" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_3"/>
+            <field name="profesor_id" ref="agenda_profesor_6"/>
+            <field name="materia_id" ref="agenda_materia_2"/>
+        </record>
+
+        <record id="agenda_profesorcurso_7" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_3"/>
+            <field name="profesor_id" ref="agenda_profesor_7"/>
+            <field name="materia_id" ref="agenda_materia_3"/>
+        </record>
+
+        <!-- Curso 3ero A -->
+        <record id="agenda_profesorcurso_8" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_4"/>
+            <field name="profesor_id" ref="agenda_profesor_8"/>
+            <field name="materia_id" ref="agenda_materia_4"/>
+        </record>
+
+        <record id="agenda_profesorcurso_9" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_4"/>
+            <field name="profesor_id" ref="agenda_profesor_9"/>
+            <field name="materia_id" ref="agenda_materia_5"/>
+        </record>
+
+        <!-- Curso 3ero B -->
+        <record id="agenda_profesorcurso_10" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_5"/>
+            <field name="profesor_id" ref="agenda_profesor_9"/>
+            <field name="materia_id" ref="agenda_materia_4"/>
+        </record>
+
+        <record id="agenda_profesorcurso_11" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_5"/>
+            <field name="profesor_id" ref="agenda_profesor_9"/>
+            <field name="materia_id" ref="agenda_materia_5"/>
+        </record>
+
+        <!-- Curso 4to A -->
+        <record id="agenda_profesorcurso_12" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_6"/>
+            <field name="profesor_id" ref="agenda_profesor_9"/>
+            <field name="materia_id" ref="agenda_materia_6"/>
+        </record>
+
+        <record id="agenda_profesorcurso_13" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_6"/>
+            <field name="profesor_id" ref="agenda_profesor_9"/>
+            <field name="materia_id" ref="agenda_materia_7"/>
+        </record>
+
+        <!-- Curso 4to B -->
+        <record id="agenda_profesorcurso_14" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_7"/>
+            <field name="profesor_id" ref="agenda_profesor_9"/>
+            <field name="materia_id" ref="agenda_materia_6"/>
+        </record>
+
+        <record id="agenda_profesorcurso_15" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_7"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_7"/>
+        </record>
+
+        <!-- Curso 5to A -->
+        <record id="agenda_profesorcurso_16" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_8"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_8"/>
+        </record>
+
+        <record id="agenda_profesorcurso_17" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_8"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_9"/>
+        </record>
+
+        <!-- Curso 5to B -->
+        <record id="agenda_profesorcurso_18" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_9"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_8"/>
+        </record>
+
+        <record id="agenda_profesorcurso_19" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_9"/>
+            <field name="profesor_id" ref="agenda_profesor_7"/>
+            <field name="materia_id" ref="agenda_materia_9"/>
+        </record>
+
+        <!-- Curso 6to A -->
+        <record id="agenda_profesorcurso_20" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_10"/>
+            <field name="profesor_id" ref="agenda_profesor_7"/>
+            <field name="materia_id" ref="agenda_materia_10"/>
+        </record>
+
+        <record id="agenda_profesorcurso_21" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_10"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_11"/>
+        </record>
+
+        <!-- Curso 6to B -->
+        <record id="agenda_profesorcurso_22" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_11"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_10"/>
+        </record>
+
+        <record id="agenda_profesorcurso_23" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_11"/>
+            <field name="profesor_id" ref="agenda_profesor_8"/>
+            <field name="materia_id" ref="agenda_materia_11"/>
+        </record>
+
+        <!-- Curso 12 A -->
+        <record id="agenda_profesorcurso_24" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_12"/>
+            <field name="profesor_id" ref="agenda_profesor_0"/>
+            <field name="materia_id" ref="agenda_materia_0"/>
+        </record>
+
+        <record id="agenda_profesorcurso_25" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_12"/>
+            <field name="profesor_id" ref="agenda_profesor_1"/>
+            <field name="materia_id" ref="agenda_materia_1"/>
+        </record>
+
+        <!-- Curso 12 B -->
+        <record id="agenda_profesorcurso_26" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_13"/>
+            <field name="profesor_id" ref="agenda_profesor_2"/>
+            <field name="materia_id" ref="agenda_materia_0"/>
+        </record>
+
+        <record id="agenda_profesorcurso_27" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_13"/>
+            <field name="profesor_id" ref="agenda_profesor_3"/>
+            <field name="materia_id" ref="agenda_materia_1"/>
+        </record>
+
+        <!-- Curso 13 A -->
+        <record id="agenda_profesorcurso_28" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_14"/>
+            <field name="profesor_id" ref="agenda_profesor_4"/>
+            <field name="materia_id" ref="agenda_materia_2"/>
+        </record>
+
+        <record id="agenda_profesorcurso_29" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_14"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_3"/>
+        </record>
+
+        <!-- Curso 13 B -->
+        <record id="agenda_profesorcurso_30" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_15"/>
+            <field name="profesor_id" ref="agenda_profesor_6"/>
+            <field name="materia_id" ref="agenda_materia_2"/>
+        </record>
+
+        <record id="agenda_profesorcurso_31" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_15"/>
+            <field name="profesor_id" ref="agenda_profesor_7"/>
+            <field name="materia_id" ref="agenda_materia_3"/>
+        </record>
+
+        <!-- Curso 14 A -->
+        <record id="agenda_profesorcurso_32" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_16"/>
+            <field name="profesor_id" ref="agenda_profesor_8"/>
+            <field name="materia_id" ref="agenda_materia_4"/>
+        </record>
+
+        <record id="agenda_profesorcurso_33" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_16"/>
+            <field name="profesor_id" ref="agenda_profesor_0"/>
+            <field name="materia_id" ref="agenda_materia_5"/>
+        </record>
+
+        <!-- Curso 14 B -->
+        <record id="agenda_profesorcurso_34" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_17"/>
+            <field name="profesor_id" ref="agenda_profesor_1"/>
+            <field name="materia_id" ref="agenda_materia_4"/>
+        </record>
+
+        <record id="agenda_profesorcurso_35" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_17"/>
+            <field name="profesor_id" ref="agenda_profesor_2"/>
+            <field name="materia_id" ref="agenda_materia_5"/>
+        </record>
+
+        <!-- Curso 15 A -->
+        <record id="agenda_profesorcurso_36" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_18"/>
+            <field name="profesor_id" ref="agenda_profesor_3"/>
+            <field name="materia_id" ref="agenda_materia_6"/>
+        </record>
+
+        <record id="agenda_profesorcurso_37" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_18"/>
+            <field name="profesor_id" ref="agenda_profesor_4"/>
+            <field name="materia_id" ref="agenda_materia_7"/>
+        </record>
+
+        <!-- Curso 15 B -->
+        <record id="agenda_profesorcurso_38" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_19"/>
+            <field name="profesor_id" ref="agenda_profesor_5"/>
+            <field name="materia_id" ref="agenda_materia_6"/>
+        </record>
+
+        <record id="agenda_profesorcurso_39" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_19"/>
+            <field name="profesor_id" ref="agenda_profesor_6"/>
+            <field name="materia_id" ref="agenda_materia_7"/>
+        </record>
+
+        <!-- Curso 16 A -->
+        <record id="agenda_profesorcurso_40" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_20"/>
+            <field name="profesor_id" ref="agenda_profesor_7"/>
+            <field name="materia_id" ref="agenda_materia_8"/>
+        </record>
+
+        <record id="agenda_profesorcurso_41" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_20"/>
+            <field name="profesor_id" ref="agenda_profesor_8"/>
+            <field name="materia_id" ref="agenda_materia_9"/>
+        </record>
+
+        <!-- Curso 16 B -->
+        <record id="agenda_profesorcurso_42" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_21"/>
+            <field name="profesor_id" ref="agenda_profesor_9"/>
+            <field name="materia_id" ref="agenda_materia_8"/>
+        </record>
+
+        <record id="agenda_profesorcurso_43" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_21"/>
+            <field name="profesor_id" ref="agenda_profesor_0"/>
+            <field name="materia_id" ref="agenda_materia_9"/>
+        </record>
+
+        <!-- Curso 17 A -->
+        <record id="agenda_profesorcurso_44" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_22"/>
+            <field name="profesor_id" ref="agenda_profesor_1"/>
+            <field name="materia_id" ref="agenda_materia_10"/>
+        </record>
+
+        <record id="agenda_profesorcurso_45" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_22"/>
+            <field name="profesor_id" ref="agenda_profesor_2"/>
+            <field name="materia_id" ref="agenda_materia_11"/>
+        </record>
+
+        <!-- Curso 17 B -->
+        <record id="agenda_profesorcurso_46" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_23"/>
+            <field name="profesor_id" ref="agenda_profesor_3"/>
+            <field name="materia_id" ref="agenda_materia_10"/>
+        </record>
+
+        <record id="agenda_profesorcurso_47" model="agenda.profesorcurso">
+            <field name="curso_id" ref="agenda_curso_23"/>
+            <field name="profesor_id" ref="agenda_profesor_4"/>
+            <field name="materia_id" ref="agenda_materia_11"/>
+        </record>
+
+    </data>
+</odoo> 

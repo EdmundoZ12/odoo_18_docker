@@ -1,0 +1,56 @@
+<odoo>
+  <data>
+
+    <!-- Vista de lista para Tutor -->
+    <record model="ir.ui.view" id="agenda_tutor_list_view">
+      <field name="name">agenda.tutor.list</field>
+      <field name="model">agenda.tutor</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="telefono"/>
+          <field name="direccion"/>
+        </list>
+      </field>
+    </record>
+
+    <!-- Vista de formulario para Tutor -->
+    <record model="ir.ui.view" id="agenda_tutor_form_view">
+      <field name="name">agenda.tutor.form</field>
+      <field name="model">agenda.tutor</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="telefono"/>
+            <field name="direccion"/>
+          </group>
+          
+          <group string='Usuario'>
+            <field name="user_id" string="Usuario del Tutor" domain="[('share', '=', False)]"/>
+          </group>
+
+          <notebook>
+            <page string="Alumnos">
+              <field name="alumno_ids">
+                <list>
+                  <field name="name"/>
+                  <field name="email"/>
+                </list>
+              </field>
+            </page>
+          </notebook>
+        </form>
+      </field>
+    </record>
+
+    <!-- Declaracion de las vista de tutor, en este caso lista y formulario -->
+
+    <record model="ir.actions.act_window" id="agenda.tutor_action_window">
+      <field name="name">Tutores</field>
+      <field name="res_model">agenda.tutor</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,656 @@
+<odoo>
+    <data noupdate="1">
+      <!-- alumnos  -->
+        <!-- 0 -->
+        <record model="res.partner" id="partner_alumno_0">
+            <field name="name">Gabriel lozada</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">lozadagabriel1@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_0" model="res.users">
+            <field name="login">lozadagabriel1@example.com</field> <!-- Directamente usa el correo -->
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_0"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_0" model="agenda.alumno">
+            <field name="name">Jose Bigotes</field>
+            <field name="user_id" ref="user_alumno_0"/>
+            <field name="tutor_id" ref="agenda_tutor_0"/>
+        </record>
+
+        <!-- 1 -->
+        <record model="res.partner" id="partner_alumno_1">
+            <field name="name">Ana López</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">analópez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_1" model="res.users">
+            <field name="login">analópez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_1"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_1" model="agenda.alumno">
+            <field name="name">Ana López</field>
+            <field name="user_id" ref="user_alumno_1"/>
+            <field name="tutor_id" ref="agenda_tutor_1"/>
+        </record>
+
+        <!-- 2 -->
+        <record model="res.partner" id="partner_alumno_2">
+            <field name="name">Carlos García</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">carlosgarcia@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_2" model="res.users">
+            <field name="login">carlosgarcia@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_2"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_2" model="agenda.alumno">
+            <field name="name">Carlos García</field>
+            <field name="user_id" ref="user_alumno_2"/>
+            <field name="tutor_id" ref="agenda_tutor_2"/>
+        </record>
+
+        <!-- 3 -->
+        <record model="res.partner" id="partner_alumno_3">
+            <field name="name">Lucía Fernández</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">luciafernandez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_3" model="res.users">
+            <field name="login">luciafernandez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_3"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_3" model="agenda.alumno">
+            <field name="name">Lucía Fernández</field>
+            <field name="user_id" ref="user_alumno_3"/>
+            <field name="tutor_id" ref="agenda_tutor_3"/>
+        </record>
+
+        <!-- 4 -->
+        <record model="res.partner" id="partner_alumno_4">
+            <field name="name">Pedro Martínez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">pedromartinez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_4" model="res.users">
+            <field name="login">pedromartinez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_4"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_4" model="agenda.alumno">
+            <field name="name">Pedro Martínez</field>
+            <field name="user_id" ref="user_alumno_4"/>
+            <field name="tutor_id" ref="agenda_tutor_4"/>
+        </record>
+
+        <!-- 5 -->
+        <record model="res.partner" id="partner_alumno_5">
+            <field name="name">Laura Rodríguez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">laurarodriguez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_5" model="res.users">
+            <field name="login">laurarodriguez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_5"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_5" model="agenda.alumno">
+            <field name="name">Laura Rodríguez</field>
+            <field name="user_id" ref="user_alumno_5"/>
+            <field name="tutor_id" ref="agenda_tutor_5"/>
+        </record>
+
+        <!-- 6 -->
+        <record model="res.partner" id="partner_alumno_6">
+            <field name="name">Raúl Pérez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">raulperez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_6" model="res.users">
+            <field name="login">raulperez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_6"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_6" model="agenda.alumno">
+            <field name="name">Raúl Pérez</field>
+            <field name="user_id" ref="user_alumno_6"/>
+            <field name="tutor_id" ref="agenda_tutor_6"/>
+        </record>
+
+        <!-- 7 -->
+        <record model="res.partner" id="partner_alumno_7">
+            <field name="name">María González</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">mariagonzalez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_7" model="res.users">
+            <field name="login">mariagonzalez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_7"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_7" model="agenda.alumno">
+            <field name="name">María González</field>
+            <field name="user_id" ref="user_alumno_7"/>
+            <field name="tutor_id" ref="agenda_tutor_7"/>
+        </record>
+
+        <!-- 8 -->
+        <record model="res.partner" id="partner_alumno_8">
+            <field name="name">Santiago Ruiz</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">santiagoruiz@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_8" model="res.users">
+            <field name="login">santiagoruiz@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_8"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_8" model="agenda.alumno">
+            <field name="name">Santiago Ruiz</field>
+            <field name="user_id" ref="user_alumno_8"/>
+            <field name="tutor_id" ref="agenda_tutor_8"/>
+        </record>
+
+        <!-- 9 -->
+        <record model="res.partner" id="partner_alumno_9">
+            <field name="name">Elena Torres</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">elenatorres@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_9" model="res.users">
+            <field name="login">elenatorres@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_9"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_9" model="agenda.alumno">
+            <field name="name">Elena Torres</field>
+            <field name="user_id" ref="user_alumno_9"/>
+            <field name="tutor_id" ref="agenda_tutor_9"/>
+        </record>
+
+        <!-- 10 -->
+        <record model="res.partner" id="partner_alumno_10">
+            <field name="name">David Martínez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">davidmartinez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_10" model="res.users">
+            <field name="login">davidmartinez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_10"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_10" model="agenda.alumno">
+            <field name="name">David Martínez</field>
+            <field name="user_id" ref="user_alumno_10"/>
+            <field name="tutor_id" ref="agenda_tutor_10"/>
+        </record>
+
+        <!-- 11 -->
+        <record model="res.partner" id="partner_alumno_11">
+            <field name="name">Cristina Pérez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">cristinaperez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_11" model="res.users">
+            <field name="login">cristinaperez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_11"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_11" model="agenda.alumno">
+            <field name="name">Cristina Pérez</field>
+            <field name="user_id" ref="user_alumno_11"/>
+            <field name="tutor_id" ref="agenda_tutor_11"/>
+        </record>
+
+        <!-- 12 -->
+        <record model="res.partner" id="partner_alumno_12">
+            <field name="name">Antonio Sánchez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">antoniosanchez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_12" model="res.users">
+            <field name="login">antoniosanchez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_12"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_12" model="agenda.alumno">
+            <field name="name">Antonio Sánchez</field>
+            <field name="user_id" ref="user_alumno_12"/>
+            <field name="tutor_id" ref="agenda_tutor_12"/>
+        </record>
+
+        <!-- 13 -->
+        <record model="res.partner" id="partner_alumno_13">
+            <field name="name">Rosa García</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">rosagarcia@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_13" model="res.users">
+            <field name="login">rosagarcia@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_13"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_13" model="agenda.alumno">
+            <field name="name">Rosa García</field>
+            <field name="user_id" ref="user_alumno_13"/>
+            <field name="tutor_id" ref="agenda_tutor_0"/>
+        </record>
+
+        <!-- 14 -->
+        <record model="res.partner" id="partner_alumno_14">
+            <field name="name">Javier Rodríguez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">javierrodriguez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_14" model="res.users">
+            <field name="login">javierrodriguez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_14"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_14" model="agenda.alumno">
+            <field name="name">Javier Rodríguez</field>
+            <field name="user_id" ref="user_alumno_14"/>
+            <field name="tutor_id" ref="agenda_tutor_1"/>
+        </record>
+
+        <!-- 15 -->
+        <record model="res.partner" id="partner_alumno_15">
+            <field name="name">Beatriz González</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">beatrizgonzalez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_15" model="res.users">
+            <field name="login">beatrizgonzalez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_15"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_15" model="agenda.alumno">
+            <field name="name">Beatriz González</field>
+            <field name="user_id" ref="user_alumno_15"/>
+            <field name="tutor_id" ref="agenda_tutor_2"/>
+        </record>
+
+        <!-- 16 -->
+        <record model="res.partner" id="partner_alumno_16">
+            <field name="name">Pedro Gómez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">pedrogomez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_16" model="res.users">
+            <field name="login">pedrogomez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_16"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_16" model="agenda.alumno">
+            <field name="name">Pedro Gómez</field>
+            <field name="user_id" ref="user_alumno_16"/>
+            <field name="tutor_id" ref="agenda_tutor_3"/>
+        </record>
+
+        <!-- 17 -->
+        <record model="res.partner" id="partner_alumno_17">
+            <field name="name">Alba Torres</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">albatorres@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_17" model="res.users">
+            <field name="login">albatorres@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_17"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_17" model="agenda.alumno">
+            <field name="name">Alba Torres</field>
+            <field name="user_id" ref="user_alumno_17"/>
+            <field name="tutor_id" ref="agenda_tutor_4"/>
+        </record>
+
+        <!-- 18 -->
+        <record model="res.partner" id="partner_alumno_18">
+            <field name="name">Manuel López</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">manuellopez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_18" model="res.users">
+            <field name="login">manuellopez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_18"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_18" model="agenda.alumno">
+            <field name="name">Manuel López</field>
+            <field name="user_id" ref="user_alumno_18"/>
+            <field name="tutor_id" ref="agenda_tutor_5"/>
+        </record>
+
+        <!-- 19 -->
+        <record model="res.partner" id="partner_alumno_19">
+            <field name="name">Ana Martínez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">anamartinez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_19" model="res.users">
+            <field name="login">anamartinez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_19"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_19" model="agenda.alumno">
+            <field name="name">Ana Martínez</field>
+            <field name="user_id" ref="user_alumno_19"/>
+            <field name="tutor_id" ref="agenda_tutor_6"/>
+        </record>
+
+        <!-- 20 -->
+        <record model="res.partner" id="partner_alumno_20">
+            <field name="name">Carlos Fernández</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">carlosfernandez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_20" model="res.users">
+            <field name="login">carlosfernandez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_20"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_20" model="agenda.alumno">
+            <field name="name">Carlos Fernández</field>
+            <field name="user_id" ref="user_alumno_20"/>
+            <field name="tutor_id" ref="agenda_tutor_0"/>
+        </record>
+
+        <!-- 21 -->
+        <record model="res.partner" id="partner_alumno_21">
+            <field name="name">Laura Jiménez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">laurajimenez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_21" model="res.users">
+            <field name="login">laurajimenez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_21"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_21" model="agenda.alumno">
+            <field name="name">Laura Jiménez</field>
+            <field name="user_id" ref="user_alumno_21"/>
+            <field name="tutor_id" ref="agenda_tutor_1"/>
+        </record>
+
+        <!-- 22 -->
+        <record model="res.partner" id="partner_alumno_22">
+            <field name="name">Tomás Díaz</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">tomasdiaz@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_22" model="res.users">
+            <field name="login">tomasdiaz@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_22"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_22" model="agenda.alumno">
+            <field name="name">Tomás Díaz</field>
+            <field name="user_id" ref="user_alumno_22"/>
+            <field name="tutor_id" ref="agenda_tutor_2"/>
+        </record>
+
+        <!-- 23 -->
+        <record model="res.partner" id="partner_alumno_23">
+            <field name="name">Paula Sánchez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">paulasanchez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_23" model="res.users">
+            <field name="login">paulasanchez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_23"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_23" model="agenda.alumno">
+            <field name="name">Paula Sánchez</field>
+            <field name="user_id" ref="user_alumno_23"/>
+            <field name="tutor_id" ref="agenda_tutor_3"/>
+        </record>
+
+        <!-- 24 -->
+        <record model="res.partner" id="partner_alumno_24">
+            <field name="name">Iván García</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">ivangarcia@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_24" model="res.users">
+            <field name="login">ivangarcia@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_24"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_24" model="agenda.alumno">
+            <field name="name">Iván García</field>
+            <field name="user_id" ref="user_alumno_24"/>
+            <field name="tutor_id" ref="agenda_tutor_4"/>
+        </record>
+
+        <!-- 25 -->
+        <record model="res.partner" id="partner_alumno_25">
+            <field name="name">Elena Ruiz</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">elenaruiz@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_25" model="res.users">
+            <field name="login">elenaruiz@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_25"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_25" model="agenda.alumno">
+            <field name="name">Elena Ruiz</field>
+            <field name="user_id" ref="user_alumno_25"/>
+            <field name="tutor_id" ref="agenda_tutor_5"/>
+        </record>
+
+        <!-- 26 -->
+        <record model="res.partner" id="partner_alumno_26">
+            <field name="name">David López</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">davidlopez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_26" model="res.users">
+            <field name="login">davidlopez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_26"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_26" model="agenda.alumno">
+            <field name="name">David López</field>
+            <field name="user_id" ref="user_alumno_26"/>
+            <field name="tutor_id" ref="agenda_tutor_6"/>
+        </record>
+
+        <!-- 27 -->
+        <record model="res.partner" id="partner_alumno_27">
+            <field name="name">Patricia González</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">patriciagonzalez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_27" model="res.users">
+            <field name="login">patriciagonzalez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_27"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_27" model="agenda.alumno">
+            <field name="name">Patricia González</field>
+            <field name="user_id" ref="user_alumno_27"/>
+            <field name="tutor_id" ref="agenda_tutor_7"/>
+        </record>
+
+        <!-- 28 -->
+        <record model="res.partner" id="partner_alumno_28">
+            <field name="name">Ricardo Herrera</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">ricardoherrera@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_28" model="res.users">
+            <field name="login">ricardoherrera@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_28"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_28" model="agenda.alumno">
+            <field name="name">Ricardo Herrera</field>
+            <field name="user_id" ref="user_alumno_28"/>
+            <field name="tutor_id" ref="agenda_tutor_8"/>
+        </record>
+
+        <!-- 29 -->
+        <record model="res.partner" id="partner_alumno_29">
+            <field name="name">María López</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">marialopez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_29" model="res.users">
+            <field name="login">marialopez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_29"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_29" model="agenda.alumno">
+            <field name="name">María López</field>
+            <field name="user_id" ref="user_alumno_29"/>
+            <field name="tutor_id" ref="agenda_tutor_9"/>
+        </record>
+
+        <!-- 30 -->
+        <record model="res.partner" id="partner_alumno_30">
+            <field name="name">Esteban Ramos</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">estebanramos@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_alumno_30" model="res.users">
+            <field name="login">estebanramos@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_alumno_30"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_alumno')])]"/>
+        </record>
+
+        <record id="agenda_alumno_30" model="agenda.alumno">
+            <field name="name">Esteban Ramos</field>
+            <field name="user_id" ref="user_alumno_30"/>
+            <field name="tutor_id" ref="agenda_tutor_10"/>
+        </record>
+        
+    </data>
+</odoo> 

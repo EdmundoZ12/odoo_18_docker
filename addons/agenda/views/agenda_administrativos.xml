@@ -1,0 +1,51 @@
+<odoo>
+  <data>
+
+    <!-- Lista -->
+    <record model="ir.ui.view" id="agenda.administrativo_list">
+      <field name="name">agenda administrativo list</field>
+      <field name="model">agenda.administrativo</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="cargo"/>
+          <field name="email"/>
+          <field name="fecha_inicio"/>
+          <field name="fecha_fin"/>
+          <field name="estado"/>
+        </list>
+      </field>
+    </record>
+
+    <!-- Formulario -->
+    
+    <record model="ir.ui.view" id="agenda.administrativo_form">
+      <field name="name">agenda administrativo form</field>
+      <field name="model">agenda.administrativo</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="cargo"/>
+            <field name="fecha_inicio"/>
+            <field name="fecha_fin"/>
+          </group>
+
+          <group string='Usuario'>
+            <field name="user_id" string="Usuario del administrativo" domain="[('share', '=', False)]"/>
+            <field name="employee_id" string="Empleado del Administrativo" domain="[('share', '=', False)]"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- Declaracion de las vista de administrativo, en este caso lista y formulario -->
+
+    <record model="ir.actions.act_window" id="agenda.administrativo_action_window">
+      <field name="name">Administrativo</field>
+      <field name="res_model">agenda.administrativo</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+  </data>
+</odoo>

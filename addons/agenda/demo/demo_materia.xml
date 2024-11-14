@@ -1,0 +1,54 @@
+<odoo>
+    <data noupdate="1">
+      <!-- Materias  -->
+                  
+        <record id="agenda_materia_0" model="agenda.materia">
+            <field name="name">Matemáticas</field>
+        </record>
+
+        <record id="agenda_materia_1" model="agenda.materia">
+            <field name="name">Física</field>
+        </record>
+
+        <record id="agenda_materia_2" model="agenda.materia">
+            <field name="name">Química</field>
+        </record>
+
+        <record id="agenda_materia_3" model="agenda.materia">
+            <field name="name">Biología</field>
+        </record>
+
+        <record id="agenda_materia_4" model="agenda.materia">
+            <field name="name">Historia</field>
+        </record>
+
+        <record id="agenda_materia_5" model="agenda.materia">
+            <field name="name">Geografía</field>
+        </record>
+
+        <record id="agenda_materia_6" model="agenda.materia">
+            <field name="name">Literatura</field>
+        </record>
+
+        <record id="agenda_materia_7" model="agenda.materia">
+            <field name="name">Inglés</field>
+        </record>
+
+        <record id="agenda_materia_8" model="agenda.materia">
+            <field name="name">Educación Física</field>
+        </record>
+
+        <record id="agenda_materia_9" model="agenda.materia">
+            <field name="name">Arte</field>
+        </record>
+
+        <record id="agenda_materia_10" model="agenda.materia">
+            <field name="name">Música</field>
+        </record>
+
+        <record id="agenda_materia_11" model="agenda.materia">
+            <field name="name">Computación</field>
+        </record>
+        
+    </data>
+</odoo> 

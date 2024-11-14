@@ -1,0 +1,291 @@
+<odoo>
+    <data noupdate="1">
+      <!-- tutores  -->
+        <!-- 0 -->
+        <record model="res.partner" id="partner_tutor_0">
+            <field name="name">Jose Bigotes</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">josebigoton@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_0" model="res.users">
+            <field name="login">josebigoton@example.com</field> <!-- Directamente usa el correo -->
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_0"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_0" model="agenda.tutor">
+            <field name="name">Jose Bigotes</field>
+            <field name="telefono">73412834</field>
+            <field name="direccion">Calle Las vegas</field>
+            <field name="user_id" ref="user_tutor_0"/>
+        </record>
+
+        <!-- 1 -->
+        <record model="res.partner" id="partner_tutor_1">
+            <field name="name">Ana Ruiz</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">anaruiz@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_1" model="res.users">
+            <field name="login">anaruiz@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_1"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_1" model="agenda.tutor">
+            <field name="name">Ana Ruiz</field>
+            <field name="telefono">76543210</field>
+            <field name="direccion">Avenida Principal 123</field>
+            <field name="user_id" ref="user_tutor_1"/>
+        </record>
+
+        <!-- 2 -->
+        <record model="res.partner" id="partner_tutor_2">
+            <field name="name">Carlos Martinez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">carlosm@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_2" model="res.users">
+            <field name="login">carlosm@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_2"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_2" model="agenda.tutor">
+            <field name="name">Carlos Martinez</field>
+            <field name="telefono">78965432</field>
+            <field name="direccion">Calle Falsa 456</field>
+            <field name="user_id" ref="user_tutor_2"/>
+        </record>
+
+        <!-- 3 -->
+        <record model="res.partner" id="partner_tutor_3">
+            <field name="name">Laura Gomez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">laurag@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_3" model="res.users">
+            <field name="login">laurag@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_3"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_3" model="agenda.tutor">
+            <field name="name">Laura Gomez</field>
+            <field name="telefono">12398765</field>
+            <field name="direccion">Avenida 5 de mayo 789</field>
+            <field name="user_id" ref="user_tutor_3"/>
+        </record>
+
+        <!-- 4 -->
+        <record model="res.partner" id="partner_tutor_4">
+            <field name="name">Pedro Castillo</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">pedrocastillo@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_4" model="res.users">
+            <field name="login">pedrocastillo@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_4"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_4" model="agenda.tutor">
+            <field name="name">Pedro Castillo</field>
+            <field name="telefono">45612378</field>
+            <field name="direccion">Calle 1, Zona Norte</field>
+            <field name="user_id" ref="user_tutor_4"/>
+        </record>
+
+        <!-- 5 -->
+        <record model="res.partner" id="partner_tutor_5">
+            <field name="name">Mariana Lopez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">marianalopez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_5" model="res.users">
+            <field name="login">marianalopez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_5"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_5" model="agenda.tutor">
+            <field name="name">Mariana Lopez</field>
+            <field name="telefono">32165498</field>
+            <field name="direccion">Calle Juarez 300</field>
+            <field name="user_id" ref="user_tutor_5"/>
+        </record>
+
+        <!-- 6 -->
+        <record model="res.partner" id="partner_tutor_6">
+            <field name="name">Eduardo Pérez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">eduardoperez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_6" model="res.users">
+            <field name="login">eduardoperez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_6"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_6" model="agenda.tutor">
+            <field name="name">Eduardo Pérez</field>
+            <field name="telefono">65432198</field>
+            <field name="direccion">Paseo de la Reforma 800</field>
+            <field name="user_id" ref="user_tutor_6"/>
+        </record>
+
+        <!-- 7 -->
+        <record model="res.partner" id="partner_tutor_7">
+            <field name="name">Isabel Fernandez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">isabelfernandez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_7" model="res.users">
+            <field name="login">isabelfernandez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_7"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_7" model="agenda.tutor">
+            <field name="name">Isabel Fernandez</field>
+            <field name="telefono">98765432</field>
+            <field name="direccion">Calle 10, Barrio Sur</field>
+            <field name="user_id" ref="user_tutor_7"/>
+        </record>
+
+        <!-- 8 -->
+        <record model="res.partner" id="partner_tutor_8">
+            <field name="name">Luis Sanchez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">luissanchez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_8" model="res.users">
+            <field name="login">luissanchez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_8"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_8" model="agenda.tutor">
+            <field name="name">Luis Sanchez</field>
+            <field name="telefono">65432100</field>
+            <field name="direccion">Avenida del Mar 500</field>
+            <field name="user_id" ref="user_tutor_8"/>
+        </record>
+
+        <!-- 9 -->
+        <record model="res.partner" id="partner_tutor_9">
+            <field name="name">Marta Ruiz</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">martaruiz@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_9" model="res.users">
+            <field name="login">martaruiz@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_9"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_9" model="agenda.tutor">
+            <field name="name">Marta Ruiz</field>
+            <field name="telefono">32198765</field>
+            <field name="direccion">Calle Nueva 200</field>
+            <field name="user_id" ref="user_tutor_9"/>
+        </record>
+
+        <!-- 10 -->
+        <record model="res.partner" id="partner_tutor_10">
+            <field name="name">Juan Gomez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">juangomez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_10" model="res.users">
+            <field name="login">juangomez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_10"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_10" model="agenda.tutor">
+            <field name="name">Juan Gomez</field>
+            <field name="telefono">87654321</field>
+            <field name="direccion">Calle Primavera 123</field>
+            <field name="user_id" ref="user_tutor_10"/>
+        </record>
+
+        <!-- 11 -->
+        <record model="res.partner" id="partner_tutor_11">
+            <field name="name">Sofia Martinez</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">sofiamartinez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_11" model="res.users">
+            <field name="login">sofiamartinez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_11"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_11" model="agenda.tutor">
+            <field name="name">Sofia Martinez</field>
+            <field name="telefono">11223344</field>
+            <field name="direccion">Avenida Libertad 999</field>
+            <field name="user_id" ref="user_tutor_11"/>
+        </record>
+
+        <!-- 12 -->
+        <record model="res.partner" id="partner_tutor_12">
+            <field name="name">Francisco López</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="email">franciscolopez@example.com</field>
+            <field name="image_1920" type="base64" file="base/static/img/avatar_grey.png"/>
+        </record>
+
+        <record id="user_tutor_12" model="res.users">
+            <field name="login">franciscolopez@example.com</field>
+            <field name="password">123</field>
+            <field name="partner_id" ref="partner_tutor_12"/>
+            <field name="groups_id" eval="[(6, 0, [ref('agenda.group_agenda_tutor')])]"/>
+        </record>
+
+        <record id="agenda_tutor_12" model="agenda.tutor">
+            <field name="name">Francisco López</field>
+            <field name="telefono">22334455</field>
+            <field name="direccion">Calle 2, Zona Centro</field>
+            <field name="user_id" ref="user_tutor_12"/>
+        </record>
+
+    </data>
+</odoo> 
